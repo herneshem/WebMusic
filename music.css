@@ -34,7 +34,7 @@
     margin: 20px ;
   }
   
-  article {
+  article{
     color: white;
     float: left;
     padding: 20px;
@@ -42,11 +42,14 @@
     background-image: url('Multimedia/turntable.jpg') ;
     background-repeat: no-repeat;
     background-size: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     font-size: 20px;
     /*background-color: #f1f1f1;*/
     height: 620px; /* only for demonstration, should be removed */
+    
+    
   }
+  
   
   
   
@@ -55,6 +58,7 @@
     content: "";
     display: table;
     clear: both;
+  
     
   }
   a{
@@ -66,13 +70,17 @@
   }
 
   #list tr{
-    color: rgb(209, 245, 8);
-    font-family: 'Times New Roman', Times, serif;
+    color: rgb(106, 74, 223);
+    font-family: 'Times New Roman', Times, serif ;
+    background-color: rgb(20, 19, 19);
+  
+    
     
   }
   #reproductor audio{
-    margin-top: 20px;
-    display:inline-block
+    margin: 300px 350px auto;
+    display:inline-block;
+
   }
   
   /* Style the footer */

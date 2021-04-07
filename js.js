@@ -15,30 +15,34 @@ const llamadajson = async () => {
 
 const jsontem = leerjson => {
    //----------- LLAMANDO AL JSON POR CADA ELEMENTO, SE PUEDE OBVIAR, PERO SE LLAMARIA COMO OBJETO
-
+   
    leerjson.forEach(element => {
-
+      
       //----------CREANDO UNA TABLA CON LOS ELEMENTOS EN EL HTML
        list.insertRow();
       list1.insertRow();
    })
-
+   
    //----------ITERANDO CON EL =+`` PARA QUE RECORRA EL JSON
    for (let item of leerjson) {
-      console.log(item.Url)
-      list.innerHTML += `
-   <td><b>${item.author}</b></td>
-   <td><b>${item.tema}</b></td> 
-   <td><audio controls>
-   <source src="${item.Url}"></audio></td>
+      
+      console.log(item)
+     list.innerHTML += `
+   <tr><td>${item.author}</td>
+   <td>${item.tema}</td> 
+   <td><audio controls style="width:150px">
+   <source src="${item.Url}"></audio></td></tr>
+   
   `
-
-   }
-
   
-}
+   }
+   
+  
+   
+  
+};
 
-
+list += '';
 
 
 
