@@ -1,18 +1,19 @@
 [
     {
         "author": "Lory Mayers",
-        "tema": "Emborráchame"
+        "tema": "Emborráchame",
+        "Url":"Multimedia/musica/Emborracharme.mp3"
     },
     {
         "author": "Club",
-        "tema": "Love of Lesbian"
+        "tema": "Love of Lesbian",
+        "Url":"Multimedia/musica/love_of_lesbian.mp3"
     },
     {
         "author": "Viva Suecia",
-        "tema": "A donded ir"
-    },
-    {
-        "author": "julio",
-        "tema": "El último tema"
+        "tema": "A donde ir",
+        "Url":"Multimedia/musica/viva_suecia.mp3"
     }
+    
 ]
+

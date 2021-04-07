@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', e => { llamadajson() });
 
 const list = document.getElementById('list')
+const list1 = document.getElementById('list1')
 list.addEventListener('click', e => { leer(e) })
-
-
-
-
 
 
 //ATRAPAR JSON
@@ -22,17 +19,23 @@ const jsontem = leerjson => {
    leerjson.forEach(element => {
 
       //----------CREANDO UNA TABLA CON LOS ELEMENTOS EN EL HTML
-      const crear = list.insertRow();
+       list.insertRow();
+      list1.insertRow();
    })
 
    //----------ITERANDO CON EL =+`` PARA QUE RECORRA EL JSON
    for (let item of leerjson) {
-      //console.log(item)
+      console.log(item.Url)
       list.innerHTML += `
    <td><b>${item.author}</b></td>
-   <td><b>${item.tema}</b><button style="margin-left:30px"></button></td> 
+   <td><b>${item.tema}</b></td> 
+   <td><audio controls>
+   <source src="${item.Url}"></audio></td>
   `
+
    }
+
+  
 }
 
 
