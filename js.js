@@ -20,7 +20,7 @@ const jsontem = leerjson => {
       
       //----------CREANDO UNA TABLA CON LOS ELEMENTOS EN EL HTML
        list.insertRow();
-      list1.insertRow();
+      
    })
    
    //----------ITERANDO CON EL =+`` PARA QUE RECORRA EL JSON
@@ -34,15 +34,11 @@ const jsontem = leerjson => {
    <source src="${item.Url}"></audio></td></tr>
    
   `
-  
    }
-   
-  
-   
   
 };
 
-list += '';
+
 
 
 
